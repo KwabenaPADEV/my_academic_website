@@ -84,6 +84,45 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(100px,1fr));
+  gap:10px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:100px;
+  object-fit:cover;
+  border-radius:8px;
+  cursor:pointer;
+  transition:transform .3s ease;
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.05);
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+  gap:12px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:120px;
+  object-fit:cover;
+  border-radius:10px;
+  cursor:pointer;
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.05);
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
     
   </style>
 </head>
@@ -128,14 +167,12 @@
 <div class="card" id="about">
   <div class="h2">About</div>
 
-  <p>
-  I am an incoming Master of Science in Management Information Systems (Project Management) student with a background in Information Technology Education and digital systems development. 
-  My work focuses on digital engagement, user-centered system design, and the use of technology to support teaching and learning.
+<p style="text-align: justify;">
+  I am an emerging scholar in Information Systems with a background in Information Technology Education and digital systems development. My academic interests lie at the intersection of digital engagement, human-centered system design, and the application of technology to enhance learning and organizational effectiveness. I am particularly interested in how digital tools can be leveraged to improve accessibility, user experience, and inclusive participation in both educational and professional environments.
 </p>
-<p>
-  I combine technical expertise with teaching and community engagement — designing web platforms, training users on enterprise systems, 
-  and leading digital literacy initiatives in underserved communities. My goal is to support inclusive digital learning environments 
-  while contributing to impactful technology-driven programs.
+
+<p style="text-align: justify;">
+  My work integrates research, technical development, and community engagement. I have contributed to projects in educational technology, digital literacy, and system design, while also participating in collaborative research addressing real-world challenges. Through these experiences, I have developed a strong foundation in both qualitative and technical approaches to problem-solving. My long-term goal is to contribute to innovative, evidence-based solutions that support digital transformation and inclusive development across diverse communities.
 </p>
 
 
@@ -157,12 +194,36 @@
 
 
 <div class="card" id="research">
-  <div class="h2">Research Interests</div>
-  <ul>
-  <li><strong>Digital Engagement & Storytelling</strong> — Using technology to communicate ideas and support learning</li>
-  <li><strong>Educational Technology</strong> — Integration of digital tools in teaching and student development</li>
-  <li><strong>Human-Centered System Design</strong> — Usability, accessibility, and user experience</li>
-  <li><strong>Technology for Social Impact</strong> — Digital inclusion in underserved communities</li>
+<div class="h2">Research Interests</div>
+
+<ul>
+  <li>
+    <strong>Digital Engagement & Storytelling</strong><br>
+    <span class="muted">
+      Exploring how digital technologies can be used to communicate ideas effectively, enhance learning experiences, and support interactive content delivery.
+    </span>
+  </li>
+
+  <li>
+    <strong>Educational Technology</strong><br>
+    <span class="muted">
+      Integration of digital tools and platforms to improve teaching methodologies, student engagement, and learning outcomes.
+    </span>
+  </li>
+
+  <li>
+    <strong>Human-Centered System Design</strong><br>
+    <span class="muted">
+      Focus on usability, accessibility, and user experience in the design and development of interactive systems.
+    </span>
+  </li>
+
+  <li>
+    <strong>Technology for Social Impact</strong><br>
+    <span class="muted">
+      Leveraging technology to promote digital inclusion, empower underserved communities, and support sustainable development initiatives.
+    </span>
+  </li>
 </ul>
 
 <!----
@@ -174,12 +235,52 @@
   </ul>
 ------>
   <br>
-  <div class="h2">Research in Progress</div>
+<div class="h2">Research in Progress</div>
 
 <ul>
-  <li><strong>Impact of Remote Work on Employee Productivity and Job Satisfaction</strong> — Case study research</li>
-  <li><strong>Digital Literacy and Technology Adoption in Underserved Communities</strong> — Community-based insights</li>
-  <li><strong>Secure System Design and User Awareness</strong> — Exploratory work on safe digital practices</li>
+  <li>
+    <strong>Impact of Remote Work on Employee Productivity and Job Satisfaction</strong><br>
+    <span class="muted">
+      Case study research examining how remote work influences employee performance, engagement, and overall job satisfaction across different work environments.
+      <br>
+      Tools: Survey Analysis, SPSS, Data Visualization
+      <br>
+      Co-authors: Paul Tandoh Asare
+    </span>
+  </li>
+
+  <li>
+    <strong>Digital Literacy and Technology Adoption in Underserved Communities</strong><br>
+    <span class="muted">
+      Community-based research exploring factors influencing digital literacy levels and the adoption of technology in underserved populations.
+      <br>
+      Tools: Field Surveys, Interviews, Data Analysis
+      <br>
+      Co-authors: Paul Tandoh Asare
+    </span>
+  </li>
+
+  <li>
+    <strong>Secure System Design and User Awareness</strong><br>
+    <span class="muted">
+      Exploratory research focusing on secure system practices and improving user awareness to reduce vulnerabilities in digital environments.
+      <br>
+      Tools: System Analysis, Security Frameworks, User Studies
+      <br>
+      Co-authors: Paul Tandoh Asare
+    </span>
+  </li>
+
+  <li>
+    <strong>AI-Driven Denoising and Transcription of Air Traffic Control Audio</strong><br>
+    <span class="muted">
+      Research project applying deep learning techniques to improve the clarity and transcription accuracy of Air Traffic Control communications.
+      <br>
+      Tools: Python, PyTorch, Whisper, Hugging Face, Librosa
+      <br>
+      Co-authors: Abdul Latif Abdul Ganiyu, Paul Tandoh Asare
+    </span>
+  </li>
 </ul>
 
 <!-----
@@ -189,23 +290,70 @@
     <li><strong>Impact of Remote Work on Employee Productivity and Job Satisfaction</strong> — Case study research</li>
   </ul>
   ----->
+
+  <br>
+<div class="h2">Completed Research Projects</div>
+
+<ul>
+  <li>
+    <strong>Using Phonic Method to Help Basic Three Learners of St. Monica’s Primary School Improve Their Reading Skills in English Language</strong><br>
+    <span class="muted">Co-authors: Esther Bador, Paul Tandoh Asare</span>
+  </li>
+
+  <li>
+    <strong>Design & Implementation of an Electronic Voting System for Akenten Appiah-Menka University of Skills Training and Entrepreneurial Development</strong><br>
+    <span class="muted">Co-authors: Denis Ayamba, Waponde Derrick, Umar Abdul Hafiz, Nyarko Graham Kwadwo, Paul Tandoh Asare</span>
+  </li>
+
+  <li>
+    <strong>School Management System: Enhancing the Evaluation of Academic Performance of Students at the Basic Level (Case Study: KNUST Junior High School)</strong><br>
+    <span class="muted">Co-authors: Hafix Aminu, Paul Tandoh Asare</span>
+  </li>
+
+  <li>
+    <strong>Securing Ghana Police Data Communication Systems</strong><br>
+    <span class="muted">Co-authors: Amos Frimpong, Paul Tandoh Asare</span>
+  </li>
+</ul>
+
 </div>
+
+
+
+
+
 
 <div class="card" id="projects">
   <div class="h2">Selected Technical Projects</div>
 
-  <ul>
+<ul>
   <li>
-    <strong>School Management System</strong> — Academic platform supporting student records, communication, and administrative workflows
+    <strong>School Management System</strong><br>
+    <span class="muted">
+      Academic platform designed to manage student records, communication, and administrative workflows, improving efficiency in school operations.
+      <br>
+      Tools: HTML, CSS, JavaScript, PHP, MySQL
+    </span>
   </li>
+
   <li>
-    <strong>Event Voting System</strong> — Real-time digital voting platform with verification mechanisms
+    <strong>Event Voting System</strong><br>
+    <span class="muted">
+      Real-time digital voting platform with verification mechanisms to ensure transparency, accuracy, and fraud prevention in elections.
+      <br>
+      Tools: JavaScript, PHP, MySQL
+    </span>
   </li>
+
   <li>
-    <strong>Find Hostel Platform</strong> — Web-based housing platform improving student accommodation search experience
+    <strong>Find Hostel Platform</strong><br>
+    <span class="muted">
+      Web-based housing platform developed to improve student accommodation search experience through location filtering and user-friendly design.
+      <br>
+      Tools: HTML, CSS, JavaScript, PHP
+    </span>
   </li>
 </ul>
-
 
 <!--------
   <ul>
@@ -296,6 +444,18 @@
   ----->
 </div>
 
+<!-- Picture Gallery -->
+<div class="card" id="gallery">
+  <div class="h2">Gallery</div>
+
+  <div class="gallery-grid">
+    <img src="p1.png" alt="Gallery Image">
+    <img src="p4.png" alt="Gallery Image">
+    <img src="p7.jpg" alt="Gallery Image">
+    <img src="p6.jpg" alt="Gallery Image">
+  </div>
+</div>
+
 </section>
 
 <aside>
@@ -367,6 +527,40 @@
   }
 </script>
 
+<script>
+  // Gallery Upload Script
+  const uploadInput = document.getElementById("imageUpload");
+  const galleryGrid = document.getElementById("galleryGrid");
+
+  uploadInput.addEventListener("change", function(e){
+    const file = e.target.files[0];
+    if(!file) return;
+
+    const reader = new FileReader();
+
+    reader.onload = function(event){
+      const img = document.createElement("img");
+      img.src = event.target.result;
+
+      // Click to open modal (reuse your modal)
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+
+      galleryGrid.appendChild(img);
+    }
+
+    reader.readAsDataURL(file);
+  });
+
+  document.querySelectorAll(".photo img, .gallery-grid img").forEach(image => {
+  image.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+});
+</script>
   
 </body>
 </html>
